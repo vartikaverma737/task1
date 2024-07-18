@@ -38,16 +38,23 @@ nav ul li a {
     text-decoration: none;
 }
 
-
 .hero {
     height: 100vh;
-    background:url(image3.jpg)
-    backgroung-size:cover;
-    flex-direction: column;
+    background: url('image35.jpg') no-repeat center center/cover;
+    display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: #000000;
     text-align: center;
+}
+
+.hero .glassmorphism {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .hero h1 {
@@ -61,15 +68,16 @@ nav ul li a {
 }
 
 .hero .btn {
-    background: #5cb85c;
-    color: #fff;
+    background: rgba(29, 24, 5, 0.8);
+    color: #ffffff;
     padding: 10px 20px;
     border-radius: 5px;
     text-decoration: none;
+    transition: background 0.3s ease;
 }
 
 .hero .btn:hover {
-    background: #4cae4c;
+    background: rgba(76, 174, 76, 0.9);
 }
 
 .section {
